@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>bmiview</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="bmiview">
+  <ion-card> 
+    <ion-card-header  *ngFor="let student of rowsStudent">
+      ชื่อ-นามสกุล : {{student.student_title}} {{student.student_name}} {{student.student_surname}}
+      <p>น้ำหนัก : {{student.develop_weight}} กิโลกรัม </p>
+      <p>ส่วนสูง : {{student.develop_height}} เซนติเมตร </p>
+      <p>ค่า BMI : {{student.bmi}} </p>
+      <p>อยู่ในเกณฑ์ : {{student.develop_standard}} </p>
+      <p>รายละเอียดเพิ่มเติม : {{student.develop_description}} </p>
+      <p>บันทึกเมื่อวันที่ :  {{student.develop_date}} </p>
+    </ion-card-header>
+     
+  </ion-card>
+</ion-content>
